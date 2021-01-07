@@ -8,6 +8,7 @@ RUN apk update && \
     gnupg
 
 # Install yarn
+# https://github.com/linearapp/linear-import/issues/50
 RUN touch ~/.bashrc \
     && curl -o- -L https://yarnpkg.com/install.sh | bash
 
