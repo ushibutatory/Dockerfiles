@@ -1,0 +1,19 @@
+name: "Build Image: linear-import"
+
+on:
+  push:
+    branches: [ main ]
+    paths: linear-import/**
+  pull_request:
+    branches: [ main ]
+    paths: linear-import/**
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build the Docker image
+      run: |
+        cd ${GITHUB_WORKSPACE}/linear-import
+        docker build . --file Dockerfile
