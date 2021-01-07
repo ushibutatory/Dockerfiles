@@ -10,5 +10,5 @@ This is unofficial docker image.
 ```bash
 > docker run -t -i ushibutatory/linear-import /bin/bash
 ...(pulling image)...
-root@0d3e7d195faa:/# linear-import
+root@...:/# linear-import
 ```
