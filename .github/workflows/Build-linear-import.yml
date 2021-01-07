@@ -3,10 +3,14 @@ name: "Build Image: linear-import"
 on:
   push:
     branches: [ main ]
-    paths: linear-import/**
+    paths:
+      - linear-import/**
+      - .github/workflows/*-linear-import.yml
   pull_request:
     branches: [ main ]
-    paths: linear-import/**
+    paths:
+      - linear-import/**
+      - .github/workflows/*-linear-import.yml
 
 jobs:
   build:
