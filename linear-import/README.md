@@ -8,7 +8,7 @@ This is unofficial docker image.
 ## How to use
 
 ```bash
-> docker run -t -i ushibutatory/linear-import /bin/bash
+> docker run -it ushibutatory/linear-import /bin/bash
 ...(pulling image)...
 root@...:/# linear-import
 ```
